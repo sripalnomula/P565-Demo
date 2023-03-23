@@ -10,6 +10,7 @@ public class Customer {
 
     @NotEmpty(message = "Name cannot be Empty.")
     private String name;
+    @NotEmpty(message = "email cannot be Empty.")
     private String email;
 
     public int getId() {

@@ -40,6 +40,8 @@ public class CustomerRepository {
         Customer x=getCustomerById(id);
         if(x!=null) {
             customers.remove(x);
+        } else {
+            throw new IllegalStateException("customer with this id is not found.");
         }
     }
 }

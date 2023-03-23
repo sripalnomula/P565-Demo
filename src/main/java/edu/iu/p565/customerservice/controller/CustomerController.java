@@ -32,6 +32,7 @@ public class CustomerController {
         }
     @DeleteMapping("/{id}")
     public void delete(@PathVariable int id){
+        repository.delete(id);
 
     }
 
